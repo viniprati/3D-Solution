@@ -1,0 +1,135 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Solucion</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap">
+</head>
+<body style="font-family: 'Open Sans', sans-serif; background-color: #f0f0f0; margin: 0; padding: 0;">
+    <style>
+    /* Custom CSS */
+    header { background-color: #282c34; padding: 20px; color: white; text-align: center; }
+    nav ul { list-style: none; padding: 0; display: flex; justify-content: center; gap: 20px; }
+    nav ul li { display: inline-block; }
+    nav ul li a { color: white; text-decoration: none; padding: 10px 15px; border-radius: 5px; }
+    nav ul li a:hover { background-color: #61dafb; transition: 0.3s; }
+
+    /* Section Styles */
+    section { padding: 60px 20px; }
+    h1 { font-size: 2.5em; margin-bottom: 20px; }
+    p { font-size: 1.1em; line-height: 1.6; }
+    button { background-color: #61dafb; color: #fff; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; }
+    button:hover { background-color: #21a1f1; transition: 0.3s; }
+
+    /* Portfolio Section */
+    #portfolio ul { display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; }
+    #portfolio ul li { list-style: none; width: 30%; background-color: white; padding: 20px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); border-radius: 10px; }
+    #portfolio ul li img { max-width: 100%; border-radius: 10px; }
+    #portfolio ul li h2 { font-size: 1.5em; margin-top: 10px; }
+
+    /* Contact Section */
+    form { display: flex; flex-direction: column; gap: 10px; max-width: 600px; margin: 0 auto; }
+    input, textarea { padding: 10px; border: 1px solid #ccc; border-radius: 5px; }
+    textarea { resize: vertical; min-height: 100px; }
+    footer { text-align: center; padding: 20px; background-color: #282c34; color: white; }
+    footer ul { list-style: none; padding: 0; display: flex; justify-content: center; gap: 10px; }
+    footer ul li { display: inline; }
+    footer ul li a { color: #61dafb; text-decoration: none; }
+    footer ul li a:hover { text-decoration: underline; }
+    </style>
+    
+    <header>
+        <nav>
+            <ul id="nav-menu"></ul>
+        </nav>
+        <div class="logo">
+            <img src="images/logo.png" alt="3D Solucion Logo">
+        </div>
+    </header>
+    <main>
+        <!-- Home Section -->
+        <section id="home">
+            <h1>Welcome to 3D Solucion</h1>
+            <p>We provide innovative 3D solutions for your business.</p>
+            <button>Learn More</button>
+        </section>
+        <!-- About Us Section -->
+        <section id="about-us">
+            <h1>About Us</h1>
+            <p>We are a team of experts in 3D technology.</p>
+            <img src="images/about-us.jpg" alt="About Us Image">
+            <p>Our mission is to provide high-quality 3D solutions that meet our clients' needs.</p>
+        </section>
+        <!-- Portfolio Section -->
+        <section id="portfolio">
+            <h1>Portfolio</h1>
+            <ul>
+                <li>
+                    <img src="images/project1.jpg" alt="Project 1">
+                    <h2>Project 1</h2>
+                    <p>This is a brief description of Project 1.</p>
+                </li>
+                <li>
+                    <img src="images/project2.jpg" alt="Project 2">
+                    <h2>Project 2</h2>
+                    <p>This is a brief description of Project 2.</p>
+                </li>
+                <li>
+                    <img src="images/project3.jpg" alt="Project 3">
+                    <h2>Project 3</h2>
+                    <p>This is a brief description of Project 3.</p>
+                </li>
+            </ul>
+        </section>
+        <!-- Contact Us Section -->
+        <section id="contact-us">
+            <h1>Contact Us</h1>
+            <p>Get in touch with us for more information.</p>
+            <form>
+                <input type="text" placeholder="Name">
+                <input type="email" placeholder="Email">
+                <textarea placeholder="Message"></textarea>
+                <button>Send</button>
+            </form>
+            <address>
+                <p>Address: 123 Main St, Anytown, USA</p>
+                <p>Phone: 555-555-5555</p>
+                <p>Email: [info@3dsolucion.com](mailto:info@3dsolucion.com)</p>
+            </address>
+        </section>
+        <!-- Blog Section (if required) -->
+        <section id="blog">
+            <h1>Blog</h1>
+            <ul>
+                <li>
+                    <h2>Article 1</h2>
+                    <p>This is a brief summary of Article 1.</p>
+                    <a href="#">Read More</a>
+                </li>
+                <li>
+                    <h2>Article 2</h2>
+                    <p>This is a brief summary of Article 2.</p>
+                    <a href="#">Read More</a>
+                </li>
+                <li>
+                    <h2>Article 3</h2>
+                    <p>This is a brief summary of Article 3.</p>
+                    <a href="#">Read More</a>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 3D Solucion</p>
+        <ul>
+            <li><a href="https://www.facebook.com/3dsolucion" target="_blank">Facebook</a></li>
+            <li><a href="https://www.instagram.com/3dsolucion" target="_blank">Instagram</a></li>
+            <li><a href="https://www.linkedin.com/company/3dsolucion" target="_blank">LinkedIn</a></li>
+        </ul>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
